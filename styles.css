@@ -167,3 +167,31 @@ p {
         margin-left: 0;
     }
 }
+
+.picture {
+    width: 100%;   
+    max-width: 600px;  
+    height: auto;  
+    display: block;
+    margin: 0 auto; 
+  }
+
+@media (max-width: 768px) {  
+  .picture {
+    max-width: 90%; 
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+.hero img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 8px;
+}
