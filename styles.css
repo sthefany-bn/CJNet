@@ -187,7 +187,20 @@ p {
     text-align: center;
     gap: 1rem;
   }
+
+  .hero-content h1 {
+      font-size: 2rem; 
+  }
+
+  .services h2, .contact h2 {
+      font-size: 1.8rem;
+  }
+
+  p {
+      font-size: 1rem; 
+  }
 }
+
 
 .hero img {
     width: 100%;
