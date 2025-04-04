@@ -3,21 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagem Enviada</title>
+    <title>Mensagem Enviada - CJ Net Telecomunicações</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <a href="https://cj-net.vercel.app/">
-            <img src="logo.png" alt="CJ Net Logo" class="logo">
-        </a>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="CJ Net Logo">
+            </a>
+        </div>
     </header>
-    <main class="message-container">
-        <h1 class="message-feita">Mensagem enviada com sucesso!</h1>
-        <p>Obrigado por entrar em contato. Retornaremos em breve.</p>
-        <a href="https://cj-net.vercel.app/" class="btn-voltar">
-            <button>&#8249; Voltar</button>
-        </a>
-    </main>
+
+    <!-- Message Section -->
+    <section class="message-section">
+        <div class="container">
+            <div class="message-container animate-item">
+                <div class="message-icon">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <h1 class="message-title">Mensagem enviada com sucesso!</h1>
+                <p class="message-text">Obrigado por entrar em contato. Retornaremos em breve.</p>
+                <a href="index.html" class="btn btn-primary">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m15 18-6-6 6-6"></path>
+                    </svg>
+                    Voltar para o site
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 CJ Net Telecomunicações. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Animação de aparecimento
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateItems = document.querySelectorAll('.animate-item');
+            
+            setTimeout(() => {
+                animateItems.forEach(item => {
+                    item.classList.add('show');
+                });
+            }, 300);
+        });
+    </script>
 </body>
 </html>
