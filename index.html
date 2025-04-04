@@ -5,82 +5,376 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CJ Net Telecomunicações</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <img src="logo.png" alt="CJ Net Logo" class="logo">
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#contato">Contato</a>
-        </nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="CJ Net Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero" id="inicio">
-        <img class="picture" src="foto.jpg" alt="Tecnologia e Conectividade">
-        <div class="hero-content">
-            <h1>Seja bem-vindo à <br> CJ Net Telecomunicações!</h1>
-            <p>A sua parceira em tecnologia e conectividade.</p>
-            <br>
-            <p>Na CJ Net, você encontra tudo em produtos de informática, internet de qualidade e serviços de manutenção de computadores. Seja para melhorar seu desempenho digital ou garantir uma navegação sem interrupções, estamos aqui para atender às suas necessidades.</p>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate-item">
+                    <h1>Seja bem-vindo à <span>CJ Net Telecomunicações!</span></h1>
+                    <p class="subtitle">A sua parceira em tecnologia e conectividade.</p>
+                    <p class="description">Na CJ Net, você encontra tudo em produtos de informática, internet de qualidade e serviços de manutenção de computadores. Seja para melhorar seu desempenho digital ou garantir uma navegação sem interrupções, estamos aqui para atender às suas necessidades.</p>
+                    <div class="hero-buttons">
+                        <a href="#servicos" class="btn btn-primary">Nossos Serviços</a>
+                        <a href="#contato" class="btn btn-outline">Fale Conosco</a>
+                    </div>
+                </div>
+                <div class="hero-image animate-item">
+                    <img src="foto.jpg" alt="Tecnologia e Conectividade">
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Sobre Section -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="section-header animate-item">
+                <h2>Quem Somos</h2>
+                <p>Conheça mais sobre a CJ Net Telecomunicações</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-image animate-item">
+                    <img src="foto2.jpg" alt="Sobre CJ Net">
+                </div>
+                <div class="sobre-text animate-item">
+                    <h3>Nossa História</h3>
+                    <p>A CJ Net Telecomunicações nasceu com o objetivo de oferecer soluções tecnológicas de qualidade para Coqueiral e região. Com anos de experiência no mercado, nos tornamos referência em conectividade e serviços de informática.</p>
+                    
+                    <h3>Nossa Missão</h3>
+                    <p>Proporcionar acesso à tecnologia e conectividade de qualidade, contribuindo para o desenvolvimento digital de nossos clientes e da comunidade.</p>
+                    
+                    <div class="sobre-features">
+                        <div class="feature animate-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Qualidade</h4>
+                                <p>Produtos e serviços de alta qualidade</p>
+                            </div>
+                        </div>
+                        <div class="feature animate-item" data-delay="200">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Agilidade</h4>
+                                <p>Atendimento rápido e eficiente</p>
+                            </div>
+                        </div>
+                        <div class="feature animate-item" data-delay="400">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Suporte</h4>
+                                <p>Equipe técnica especializada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
     <section class="services" id="servicos">
-        <h2>Nossos serviços</h2>
-        <p>Na <span class="company-name">CJ Net Telecomunicações</span>, oferecemos soluções completas para atender a todas as suas necessidades tecnológicas. Descubra nossos serviços especializados e como podemos ajudar você a melhorar seu desempenho digital:</p>
-        <br>
-        <div class="service-item">
-            <h3>Produtos de Informática:</h3>
-            <p>Equipamentos e acessórios de alta qualidade para o seu dia a dia.</p>
-        </div>
-        <div class="service-item">
-            <h3>Provedor de Internet:</h3>
-            <p>Planos de internet rápidos e estáveis para manter você conectado.</p>
-        </div>
-        <div class="service-item">
-            <h3>Manutenção de Computadores:</h3>
-            <p>Diagnóstico, reparo e otimização para garantir o melhor funcionamento do seu equipamento.</p>
+        <div class="container">
+            <div class="section-header animate-item">
+                <h2>Nossos Serviços</h2>
+                <p>Na <span class="company-name">CJ Net Telecomunicações</span>, oferecemos soluções completas para atender a todas as suas necessidades tecnológicas.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-item">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="M22 7h-5"></path>
+                            <path d="M7 20h10"></path>
+                            <path d="M12 4v16"></path>
+                        </svg>
+                    </div>
+                    <h3>Produtos de Informática</h3>
+                    <p>Equipamentos e acessórios de alta qualidade para o seu dia a dia.</p>
+                    <ul class="service-features">
+                        <li>Computadores e notebooks</li>
+                        <li>Periféricos e acessórios</li>
+                        <li>Componentes e peças</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-item" data-delay="200">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                            <circle cx="12" cy="20" r="1"></circle>
+                        </svg>
+                    </div>
+                    <h3>Provedor de Internet</h3>
+                    <p>Planos de internet rápidos e estáveis para manter você conectado.</p>
+                    <ul class="service-features">
+                        <li>Fibra óptica de alta velocidade</li>
+                        <li>Planos residenciais</li>
+                        <li>Suporte técnico especializado</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-item" data-delay="400">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3>Manutenção de Computadores</h3>
+                    <p>Diagnóstico, reparo e otimização para garantir o melhor funcionamento do seu equipamento.</p>
+                    <ul class="service-features">
+                        <li>Formatação e instalação de sistemas</li>
+                        <li>Remoção de vírus e malwares</li>
+                        <li>Upgrade de hardware</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="contact" id="contato">
-        <div class="contact-container">
-            <div>
-                <h2>Contato</h2>
-                <form class="contact-form" action="https://formsubmit.co/jcinfocoq@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://cj-net.vercel.app/message.html"/>
-                    <input type="hidden" name="_captcha" value="false"/>
-                    <input type="text" name="Nome" placeholder="nome" required>
-                    <input type="email" name="Email" placeholder="email" required>
-                    <textarea name="Mensagem" placeholder="mensagem" rows="5" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content animate-item">
+                <h2>Precisando de internet de qualidade?</h2>
+                <p>Entre em contato conosco e conheça nossos planos.</p>
+                <a href="#contato" class="btn btn-white">Fale Conosco</a>
             </div>
-            <div class="contact-info">
-                <div class="contact-info-item">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
-                    <span>(35) 99823-4916 <br>(35) 99725-4916 </span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="section-header animate-item">
+                <h2>Entre em Contato</h2>
+                <p>Estamos prontos para atender você</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-form-container animate-item">
+                    <form class="contact-form" action="https://formsubmit.co/jcinfocoq@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="https://cj-net.vercel.app/message.html"/>
+                        <input type="hidden" name="_captcha" value="false"/>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="Nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="Email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="Mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
                 </div>
-                <div class="contact-info-item">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect width="20" height="20" x="2" y="2" rx="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-                    </svg>
-                    <span>@cjinfocoq</span>
-                </div>
-                <div class="contact-info-item">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    <span>Rua Rui Barbosa, 195 - Centro, Coqueiral - MG</span>
+                <div class="contact-info">
+                    <div class="contact-info-item animate-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(35) 99823-4916</p>
+                            <p>(35) 99725-4916</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item animate-item" data-delay="200">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="20" x="2" y="2" rx="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@cjinfocoq</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item animate-item" data-delay="400">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua Rui Barbosa, 195 - Centro</p>
+                            <p>Coqueiral - MG</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item animate-item" data-delay="600">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda a Sexta: 8h às 18h</p>
+                            <p>Sábado: 8h às 13h</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo animate-item">
+                    <img src="logo.png" alt="CJ Net Logo">
+                    <p>Sua parceira em tecnologia e conectividade.</p>
+                </div>
+                <div class="footer-links animate-item" data-delay="200">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services animate-item" data-delay="400">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li>Produtos de Informática</li>
+                        <li>Provedor de Internet</li>
+                        <li>Manutenção de Computadores</li>
+                    </ul>
+                </div>
+                <div class="footer-contact animate-item" data-delay="600">
+                    <h4>Contato</h4>
+                    <p><strong>Telefone:</strong> (35) 99823-4916</p>
+                    <p><strong>Instagram:</strong> @cjinfocoq</p>
+                    <p><strong>Endereço:</strong> Rua Rui Barbosa, 195 - Centro, Coqueiral - MG</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    Copyright © 2025
+                    <span class="fw-semibold">ReceitasSaudáveis</span>
+                    All Rights Reserved. Developed by
+                    <a href="https://www.linkedin.com/in/sthefany-bn-6b5960315/" target="_blank" rel="noopener noreferrer" class="fw-semibold hover-text-main-two-600">
+                        Sthefany Bueno
+                    </a>
+                    .
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+            this.classList.toggle('active');
+        });
+
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                document.querySelector('nav ul').classList.remove('show');
+                document.querySelector('.mobile-menu-btn').classList.remove('active');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animação de aparecimento ao rolar
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicialmente, oculta todos os elementos com a classe animate-item
+            const animateItems = document.querySelectorAll('.animate-item');
+            animateItems.forEach(item => {
+                item.classList.add('hidden');
+            });
+
+            // Função para verificar se um elemento está visível na viewport
+            const isElementInViewport = (el) => {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8
+                );
+            };
+
+            // Função para animar elementos quando eles entram na viewport
+            const animateOnScroll = () => {
+                animateItems.forEach(item => {
+                    if (isElementInViewport(item) && item.classList.contains('hidden')) {
+                        // Adiciona um pequeno atraso com base no atributo data-delay
+                        const delay = item.getAttribute('data-delay') || 0;
+                        setTimeout(() => {
+                            item.classList.remove('hidden');
+                            item.classList.add('show');
+                        }, delay);
+                    }
+                });
+            };
+
+            // Executa a função uma vez para animar elementos já visíveis
+            animateOnScroll();
+
+            // Adiciona o evento de scroll para animar elementos conforme o usuário rola a página
+            window.addEventListener('scroll', animateOnScroll);
+        });
+    </script>
 </body>
 </html>
